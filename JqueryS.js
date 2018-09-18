@@ -1,25 +1,24 @@
 $(document).ready(function () {
-
+    LoadDocument();
     configurarInicio();
     MostrarLista();
     SaberBoton();
     
+    function LoadDocument(){
+        $('.Mas').hide('fast');
+    }
     function SaberBoton(){
     $(function() {
         $(document).on('click', 'input[type="button"]', function(event) {
            let id = this.id;
-           if(true){}
-           MostrarMenos(id)
+           id= '#'+id;
+           MostrarOcurtar(id)
          });
        });
     }
-    function MostrarMenos(idBoton){
-        var Clase = '#'+idBoton + ' .Mas';
-        $(Clase).hide(1200);
-    }
-    function MostrarMas(idBoton){
-        var Clase = '#'+idBoton + ' .Mas';
-        $(Clase).show(1200);
+    function MostrarOcurtar(idBoton){
+        var Clase = idBoton + ' .Mas';
+        $(Clase).toggle(1200);
     }
     function MostrarLista() {
         $('.iconBars').click(function (e) {

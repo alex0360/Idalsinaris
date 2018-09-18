@@ -95,6 +95,7 @@ button{
 #Portada{
     float: left;
     max-width: 200px; max-height: 400px;
+    margin-top: 6px;
     padding-right: 12px;
 }
 /*Fin de las Imagenes*/
@@ -112,12 +113,23 @@ button{
     border: 1px transparent;
     width: 91%;
     padding: 8px;
+    margin: 2%;
+    margin-bottom: 3%;
+}
+section{
+    display: block;
+    padding-left: 100%;
+    margin-bottom: 5px;
+}
+section input{
+    width: 100%;
 }
 /*Fin de la Section*/
 /*Etiqueta Footer*/
 footer{
     clear: both;
     width: 100%;
+    margin-top: 1%;
     background-color: black;
     height: 75px;
     padding: 5px;
@@ -136,11 +148,12 @@ footer p:hover{
 @media screen and (max-width:840px){
     .Principal{
         padding: 3px;
-        max-width: 100%;
+        width: auto;
     }
     #Header{
         padding: 3px;
         border-radius:0;
+        width: auto;
     }.h1, h1{
         font-size: 2.5rem;
     }.h2, h2{
