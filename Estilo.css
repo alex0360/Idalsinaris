@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Titillium+Web');
+body{
+    background-color: transparent;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Titillium Web', sans-serif;
+}
+/*Etiqueta Nav*/
+nav{
+    widows: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-size: 1em;
+    text-align: center;
+    color:aliceblue;
+}
+nav ul li a:hover{
+text-decoration: none;
+background-color: coral;
+color: black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+.Lista{
+    display: block;
+}
+nav ul li{
+    float: left;
+}
+nav ul li.active a{
+    color:coral;
+}
+.iconBars{
+    color:aliceblue;
+    font-size: 1.5em;
+    padding:10px;
+    display: none;
+}
+/*Fin de la Etiqueta Nav*/
+
+/*Etiqueta Form*/
+form{
+    padding: 0.3%;
+    max-width: 650px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 auto;
+}
+form div{
+    padding: 15px;
+}
+input{
+    width: 80%;
+    display: block;
+}
+button{
+    width: 80%;
+    height: 50%;
+    padding: 15px;
+}
+/*Fin de la Etiqueta Form*/
+
+/*Clase Principal*/
+.Principal{
+    border: 1px transparent;
+    color: black;
+    max-width: 92%;
+    min-width: 30%;
+    position: relative;
+    top: 5px;
+    margin:0 auto;
+}
+/*Fin de la Clase Principal*/
+/* Imagenes */
+#Foto{
+    float: left;
+    max-width: 90px; max-height: 90px;
+    padding-right: 5px;
+}
+#Portada{
+    float: left;
+    max-width: 200px; max-height: 400px;
+    padding-right: 12px;
+}
+/*Fin de las Imagenes*/
+/*Etiqueta header*/
+#Header{
+    border: transparent;
+    height: 120px;
+    padding: 10px 20px;
+    background-color: rgba(245, 141, 141, 0.925);
+    border-radius: 1mm;
+}
+/*Fin de la Etiquita*/
+/*Etiqueta Section*/
+.aliniadoCascada{
+    border: 1px transparent;
+    width: 91%;
+    padding: 8px;
+}
+/*Fin de la Section*/
+/*Etiqueta Footer*/
+footer{
+    clear: both;
+    width: 100%;
+    background-color: black;
+    height: 75px;
+    padding: 5px;
+    /*Etiqueta p*/
+    text-align: center;
+}
+footer p{
+    color: aliceblue;
+    size: 6em;
+}
+footer p:hover{
+    color: coral;
+}
+/*Fin del Footer*/
+
+@media screen and (max-width:840px){
+    .Principal{
+        padding: 3px;
+        max-width: 100%;
+    }
+    #Header{
+        padding: 3px;
+        border-radius:0;
+    }.h1, h1{
+        font-size: 2.5rem;
+    }.h2, h2{
+        font-size: 1.9rem;
+    }.h3, h3{
+        font-size: 1.2rem;
+    }.h4, h4{
+        font-size: 0.95rem;
+    }
+    #Foto{
+        float: left;
+        max-width: 70px; max-height: 70px;
+    }
+    .aliniadoCascada{
+        padding: 3%;
+        width:100%;
+    }
+    footer{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 520px){
+    .Principal{
+        width: auto;
+    }
+    #Header{
+        width:auto;
+    }
+    #Foto{
+        float: left;
+        max-width: 60px; max-height: 60px;
+    }
+    .aliniadoCascada{
+        width: auto;
+        float: none;
+        -moz-float-edge: none;
+        margin: 0px;
+    }.h1, h1{
+        font-size: 2.0rem;
+    }.h2, h2{
+        font-size: 1.0rem;
+    }.h3, h3{
+        font-size: 0.95rem;
+    }.h4, h4{
+        font-size: 0.85rem;
+    }
+    footer{
+        width:auto;
+    }
+    /*Navegation*/
+    .Lista{
+        display: none;
+    }
+    #Nav li{
+        float: none;
+        display: block;
+    }
+    #Nav li a{
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+    .iconBars{
+        display: block;
+        text-align: right;
+    }
+    /*Fin del Navegation*/
+}
+@media screen and (max-width: 268px){
+    .h1, h1{
+    font-size: 1.5rem;
+    } .h2, h2{
+    font-size: 0.80rem;
+    }.h3, h3{
+    font-size: 0.80rem;
+    }.h4, h4{
+    font-size: 0.70rem;
+    }
+}
+@media screen and (max-width: 190px){
+    .h1, h1{
+    font-size: 0.95rem;
+    } .h2, h2{
+    font-size: 0.60rem;
+    }.h3, h3{
+    font-size: 0.80rem;
+    }.h4, h4{
+    font-size: 0.70rem;
+    }p{
+        size: 0.1rem;
+    }
+    header small{
+        display: none;
+    }
+    #Portada{
+        display: none;
+    }
+}
