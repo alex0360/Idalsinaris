@@ -55,6 +55,7 @@ form{
     max-width: 650px;
     border: 1px solid #000000;
     border-radius: 10px;
+    background: azure;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -64,14 +65,11 @@ form{
 form div{
     padding: 15px;
 }
-input{
-    width: 80%;
+form input{
     display: block;
-}
-button{
-    width: 80%;
-    height: 50%;
-    padding: 15px;
+    margin: 3px;
+    position: relative;
+    width: 70%;
 }
 /*Fin de la Etiqueta Form*/
 
@@ -91,10 +89,12 @@ button{
     float: left;
     max-width: 90px; max-height: 90px;
     padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #Portada{
     float: left;
-    max-width: 200px; max-height: 400px;
+    max-width: 300px; max-height: 500px;
     margin-top: 6px;
     padding-right: 12px;
 }
@@ -112,17 +112,152 @@ button{
 .aliniadoCascada{
     border: 1px transparent;
     width: 91%;
-    padding: 8px;
+    padding: 5px;
     margin: 2%;
     margin-bottom: 3%;
 }
 section{
     display: block;
     padding-left: 100%;
+    padding-block-end: 8cm;
     margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 1mm;
 }
-section input{
-    width: 100%;
+section[id=Libro1]{
+    background: ivory;
+}
+    section[id=Libro1] input[id=Libro1]{
+        text-decoration: none;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-right: 1%;
+        margin-top: 8%;
+        font-family: arial;
+        text-transform: uppercase;
+        float: right;
+        border: #1f8500;
+        font-size: 150%;
+        color: black;
+        background-color: #bfffd5;
+        border-radius: 1mm;
+        -webkit-border-radius: 1mm;
+        -moz-border-radius: 1mm;
+        -ms-border-radius: 1mm;
+        -o-border-radius: 1mm;
+    }
+    section[id=Libro1] input[id=Libro1]:hover{
+        color: ivory;
+        background-color: #bc6355;
+        text-decoration: none;
+  }
+section[id=Libro2]{
+    background: rgb(241, 146, 130);
+}
+    section[id=Libro2] input[id=Libro2]{
+        text-decoration: none;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-right: 1%;
+        margin-top: 4%;
+        font-family: arial;
+        text-transform: uppercase;
+        float: right;
+        border: #166bf5;
+        font-size: 150%;
+        color: black;
+        background-color: #ff9a3c;
+        border-radius: 1mm;
+        -webkit-border-radius: 1mm;
+        -moz-border-radius: 1mm;
+        -ms-border-radius: 1mm;
+        -o-border-radius: 1mm;
+}
+    section[id=Libro2] input[id=Libro2]:hover{
+        color:rgb(255, 229, 225);
+        background-color:  #bc6355;
+        text-decoration: none;
+  }
+    section[id=Libro3]{
+    background: rgba(113, 188, 238, 0.493);
+}
+section[id=Libro3] input[id=Libro3]{
+    text-decoration: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 1%;
+    margin-top: 5%;
+    font-family: arial;
+    text-transform: uppercase;
+    float: right;
+    border: #000000;
+    font-size: 150%;
+    color: black;
+    background-color: #bef0ff;
+    border-radius: 1mm;
+    -webkit-border-radius: 1mm;
+    -moz-border-radius: 1mm;
+    -ms-border-radius: 1mm;
+    -o-border-radius: 1mm;
+}
+section[id=Libro3] input[id=Libro3]:hover{
+    color:rgb(255, 229, 225);
+    background-color:  #dd7f70;
+    text-decoration: none;
+}
+    section[id=Libro4]{
+    background: rgb(207, 250, 126);
+}
+section[id=Libro4] input[id=Libro4]{
+    text-decoration: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 1%;
+    margin-top: 5%;
+    font-family: arial;
+    text-transform: uppercase;
+    float: right;
+    border: #f1f7fc;
+    font-size: 150%;
+    color: black;
+    background-color: #ebf8fb;
+    border-radius: 1mm;
+    -webkit-border-radius: 1mm;
+    -moz-border-radius: 1mm;
+    -ms-border-radius: 1mm;
+    -o-border-radius: 1mm;
+}
+section[id=Libro4] input[id=Libro4]:hover{
+    color:rgb(255, 229, 225);
+    background-color:  #dd7f70;
+    text-decoration: none;
+}
+    section[id=Libro5]{
+    background: rgb(243, 152, 100);
+}
+section[id=Libro5] input[id=Libro5]{
+    text-decoration: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: 1%;
+    margin-top: 5%;
+    font-family: arial;
+    text-transform: uppercase;
+    float: right;
+    border: #030303;
+    font-size: 150%;
+    color: black;
+    background-color: #4b4d4e;
+    border-radius: 1mm;
+    -webkit-border-radius: 1mm;
+    -moz-border-radius: 1mm;
+    -ms-border-radius: 1mm;
+    -o-border-radius: 1mm;
+}
+section[id=Libro5] input[id=Libro5]:hover{
+    color:rgb(255, 229, 225);
+    background-color:  #dd7f70;
+    text-decoration: none;
 }
 /*Fin de la Section*/
 /*Etiqueta Footer*/
@@ -153,7 +288,8 @@ footer p:hover{
     #Header{
         padding: 3px;
         border-radius:0;
-        width: auto;
+        width: 100%;
+        widows: 100%;
     }.h1, h1{
         font-size: 2.5rem;
     }.h2, h2{
@@ -166,6 +302,12 @@ footer p:hover{
     #Foto{
         float: left;
         max-width: 70px; max-height: 70px;
+    }
+    #Portada{
+        float: left;
+        max-width: 200px; max-height: 400px;
+        margin-top: 6px;
+        padding-right: 12px;
     }
     .aliniadoCascada{
         padding: 3%;
@@ -181,11 +323,18 @@ footer p:hover{
         width: auto;
     }
     #Header{
-        width:auto;
+        width:100%;
+        widows: 100%;
     }
     #Foto{
         float: left;
         max-width: 60px; max-height: 60px;
+    }
+    #Portada{
+        float: left;
+        max-width: 150px; max-height: 350px;
+        margin-top: 3px;
+        padding-right: 6px;
     }
     .aliniadoCascada{
         width: auto;

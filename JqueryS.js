@@ -3,15 +3,17 @@ $(document).ready(function () {
     configurarInicio();
     MostrarLista();
     SaberBoton();
-    
+    // inicio
     function LoadDocument(){
         $('.Mas').hide('fast');
     }
+    // Saber cual es el ID del botons
     function SaberBoton(){
     $(function() {
         $(document).on('click', 'input[type="button"]', function(event) {
            let id = this.id;
            id= '#'+id;
+           obtenerTexto(id)
            MostrarOcurtar(id)
          });
        });
@@ -27,6 +29,14 @@ $(document).ready(function () {
 
         })
     }
+    // Cambiar el texto del boton
+    function obtenerTexto(idBoton){
+        var boton = idBoton + ' input';
+            if($(boton).val() == 'Mas...'){
+                $(boton).val('...Menos')
+            } else $(boton).val('Mas...');        
+    }
+    // la pagina actual
     function configurarInicio() {
         var urlPath = window.location.pathname;
         //console.log(urlPath);
