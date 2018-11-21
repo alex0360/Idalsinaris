@@ -1,0 +1,8 @@
+$principal: Red;
+$secundario: white;
+$texto: black;
+
+.Encabezado{
+    display: flex;
+    background-image: linear-gradient($principal,$secundario);
+}

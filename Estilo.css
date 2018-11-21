@@ -268,16 +268,24 @@ footer{
     background-color: black;
     height: 75px;
     padding: 5px;
+    overflow: hidden;
     /*Etiqueta p*/
-    text-align: center;
+    text-align:center;
+
 }
-footer p{
+footer div p{
+    float: right;
     color: aliceblue;
-    size: 6em;
+    size: 1em;
 }
-footer p:hover{
+footer div p:hover{
     color: coral;
 }
+footer div[class=BotonesExt] ,div[class=g-follow]{
+    margin: 0%;
+    float: left;
+}
+
 /*Fin del Footer*/
 
 @media screen and (max-width:840px){
@@ -316,6 +324,7 @@ footer p:hover{
     footer{
         width: 100%;
         padding: 0;
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 520px){
@@ -352,6 +361,14 @@ footer p:hover{
     }
     footer{
         width:auto;
+        overflow: hidden;
+    }
+    footer div p{
+        display: grid;
+        display: none;
+    }
+    footer div[class=BotonesExt]{
+        float: none;
     }
     /*Navegation*/
     .Lista{
@@ -382,6 +399,16 @@ footer p:hover{
     }.h4, h4{
     font-size: 0.70rem;
     }
+    footer{        
+        overflow: hidden;
+    }
+    footer div p{
+        display: grid;
+        display: none;
+    }
+    footer div[class=BotonesExt]{
+        float: none;
+    }
 }
 @media screen and (max-width: 190px){
     .h1, h1{
@@ -400,5 +427,10 @@ footer p:hover{
     }
     #Portada{
         display: none;
+    }
+    footer div p{
+        display: grid;
+        color: aliceblue;
+        size: 1em;
     }
 }
